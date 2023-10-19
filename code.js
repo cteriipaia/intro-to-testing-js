@@ -15,5 +15,8 @@ function sayHello(input) {
 //       return "Hello, Pat!";
 //   }
 //   return "Hello, Jane!"
-    return 'Hello, ' + input + '!';
+//    if (input === undefined || input === true || input === false)
+//         return "Hello, World!";
+    if(input !== "string") return "Hello, World!";
+    return "Hello, " + input + "!";
 }
